@@ -63,7 +63,9 @@ class LandingHelpers with ChangeNotifier {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                // Provider
+              },
               child: Container(
                 child: Icon(
                   FontAwesomeIcons.google,
@@ -119,11 +121,11 @@ class LandingHelpers with ChangeNotifier {
         child: Column(
           children: [
             Text(
-              "By continuing you agree theChatApp's Terms of",
+              'By continuing you agree theChatApps Terms of',
               style: TextStyle(color: Colors.grey.shade600, fontSize: 12.0),
             ),
             Text(
-              "Services & Privacy Policy",
+              'Services & Privacy Policy',
               style: TextStyle(color: Colors.grey.shade600, fontSize: 12.0),
             )
           ],

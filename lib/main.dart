@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:the_social_app/constants/Constantcolors.dart';
+import 'package:the_social_app/services/Authentication.dart';
 import 'package:the_social_app/services/LandingPage/landingHelpers.dart';
 import 'package:the_social_app/services/splashScreen.dart';
 import 'package:provider/provider.dart';
@@ -22,6 +23,9 @@ class MyApp extends StatelessWidget {
               canvasColor: Colors.transparent),
         ),
         providers: [
+          ChangeNotifierProvider(
+            create: (_) => Authentication(),
+          ),
           ChangeNotifierProvider(
             create: (_) => LandingHelpers(),
           )
