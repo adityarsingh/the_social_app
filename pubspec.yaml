@@ -31,6 +31,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  cloud_firestore: ^1.0.5
   cupertino_icons: ^1.0.2
   eva_icons_flutter: ^3.0.0
   firebase_auth: ^1.1.0
