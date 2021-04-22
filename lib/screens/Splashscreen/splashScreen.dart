@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:the_social_app/constants/Constantcolors.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:the_social_app/services/LandingPage/landingPage.dart';
+import 'package:the_social_app/screens/LandingPage/landingPage.dart';
 
 class Splashscreen extends StatefulWidget {
   Splashscreen({Key key}) : super(key: key);

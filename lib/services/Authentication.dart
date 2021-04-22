@@ -15,7 +15,7 @@ class Authentication with ChangeNotifier {
         .signInWithEmailAndPassword(email: email, password: password);
 
     User user = userCredential.user;
-    userUid = user.uid;
+    userUid = user.email;
     print(userUid);
     notifyListeners();
   }
@@ -25,8 +25,8 @@ class Authentication with ChangeNotifier {
         .createUserWithEmailAndPassword(email: email, password: password);
 
     User user = userCredential.user;
-    userUid = user.uid;
-    print(userUid);
+    userUid = user.email;
+    print('The User id is $userUid');
     notifyListeners();
   }
 
